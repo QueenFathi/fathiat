@@ -1,13 +1,11 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import Head from "next/head";
 import AnimatedText from "@/components/AnimatedText";
-import TransitionEffect from "@/components/TransitionEffect";
 import { useRouter } from "next/router";
 
 // Netlify Form config
 
-export default function About() {
+export default function Contact() {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
@@ -47,26 +45,16 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>NexTemp Built with Nextjs</title>
-        <meta
-          name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
-        />
-      </Head>
-
-      <TransitionEffect />
-      <main
+      <main data-section id="contact"
         className={`flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Begin Today,
-I'm One Message Away 👋"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            text="Message me Today, I'm Just One Click Away 👋"
+            className="mb-16 !text-6xl !leading-tight lg:!text-5xl sm:!text-4xl xs:!text-3xl sm:mb-8"
           />
 
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 relative flex w-full flex-col items-center justify-center rounded-2xl rounded-br-2xl border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 relative items-center justify-center rounded-2xl rounded-br-2xl border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4">
             <div className="absolute top-0 -right-5 -z-10 h-[103%] w-[101.5%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
             <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-1 md:col-span-8">
               <h2 className="my-4 text-2xl font-bold capitalize text-primaryDark dark:text-primaryDark">

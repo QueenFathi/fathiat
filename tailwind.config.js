@@ -16,15 +16,16 @@ module.exports = {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
-        dark: "#1b1b1b",
-        light: "#f5f5f5",
-        primary: "#2545d0",
-        primaryDark: "#4377ee",
-        lightGreen: "#4377ee",
-        slideGreen: "#2439a9",
+        dark: "#00251d",
+        light: "#f9ffff",
+        primary: "#1af3ca",
+        primaryDark: "#1af3ca",
+        lightGreen: "#1af3ca",
+        slideGreen: "#1af3ca",
+        darkGreen: "#0d8c73"
       },
       animation: {
-        "spin-slow": "spin 8s linear infinite",
+        "spin-slow": "spin 5s linear infinite",
       },
 
       backgroundImage: {
