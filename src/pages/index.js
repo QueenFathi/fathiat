@@ -22,7 +22,7 @@ export default function Home() {
       <article data-section id="home"
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        <Layout className="!pt-48 md:!pt-32 sm:!pt-44 xs:!pt-24">
+        <Layout className="!pt-48 md:!pt-32 sm:!pt-44 xs:!pt-[18vh]">
           <div className="flex w-full items-start justify-between md:flex-col pt-10 pb-24">
             <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">
               {
