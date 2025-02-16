@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../../public/images/profile/Riley.png";
+import profilePic from "../../public/images/profile/fathiat.jpeg";
 import About from "../components/about";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
@@ -22,25 +22,26 @@ export default function Home() {
       <article data-section id="home"
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        <Layout className="!pt-48 md:!pt-32 sm:!pt-44 xs:!pt-[18vh]">
+        <Layout className="!pt-48 md:!pt-32 sm:!pt-44 xs:!pt-[10vh]">
           <div className="flex w-full items-start justify-between md:flex-col pt-10 pb-24">
-            <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">
-              {
+            <div className="w-1/2 flex self-center max-h-fit">
+              <div className="relative mb-10">
+                <div className="absolute top-4 inset-0 bg-primary -translate-x-6 translate-y-6 xs:-translate-x-3 xs:translate-y-3"></div>
                 <Image
                   priority={true}
                   src={profilePic}
                   alt="image"
-                  className="h-auto w-100"
-                  height={340}
-                  width={340}
+                  className="h-auto w-100 object-cover shadow-sm shadow-primary"
+                  height={300}
+                  width={300}
                   sizes="33vw"
                 />
-              }
+              </div>
             </div>
-            <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="flex w-1/2 flex-col items-center self-center md:w-full md:text-center">
               <AnimatedText
                 text="Hi, my name is Fathiat Abimbola Odutayo"
-                className="!text-left lg:!text-center sm:!text-3xl md:!text-4xl lg:!text-5xl xl:!text-6xl 2xl:!text-6xl"
+                className="!text-left md:!text-center sm:!text-3xl md:!text-4xl lg:!text-5xl xl:!text-6xl 2xl:!text-6xl"
               />
               <div className="flex w-full items-center items-start lg:w-full  lg:!justify-center  sm:!justify-center  md:!text-center md:inline-block md:w-full">
                 <h2 className="animate-text bg-gradient-to-r from-lightGreen via-lightGreen to-slideGreen bg-clip-text text-transparent font-semibold capitalize !text-5xl xl:!text-4xl lg:!text-4xl md:!text-5xl sm:!text-3xl">

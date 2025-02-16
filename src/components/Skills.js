@@ -44,14 +44,14 @@ const Skills = () => {
           Web
         </motion.div>
 
-        <Skill name="HTML" x="-20vw" y="2vw" />
+        <Skill name="HTML" x="-25vw" y="2vw" />
         <Skill name="Tailwind" x="-5vw" y="-10vw" />
         <Skill name="JavaScript" x="20vw" y="6vw" />
         <Skill name="Next.js" x="-20vw" y="-15vw" />
         <Skill name="CSS" x="15vw" y="-12vw" />
         <Skill name="Bootstrap" x="32vw" y="-5vw" />
-        <Skill name="React" x="-25vw" y="18vw" />
-        <Skill name="Git" x="28vw" y="18vw" />
+        <Skill name="React" x="-15vw" y="16vw" />
+        <Skill name="Git" x="28vw" y="16vw" />
       </div>
     </>
   );

@@ -23,8 +23,9 @@ const CustomLink = ({ href, title, icon, activeIcon, className = "" }) => {
           const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
           if (visibleSection) {
               setActiveSection(visibleSection.id);
+              console.log(visibleSection.id)
           }
-      }, {threshold:0.5});
+      }, {threshold:0.2});
 
       const sections = document.querySelectorAll('[data-section]');
 
