@@ -68,12 +68,12 @@ const Navbar = () => {
   return (
     <>
     <header className="fixed w-full xs:bottom-5 z-50 items-center justify-between font-medium dark:text-light">
-      <div className="xs:w-11/12 xs:mx-auto dark:xs:bg-darkGreen xs:bg-primary xs:bg-opacity-50 px-32 lg:px-16 z-1 md:px-12 sm:px-8 py-8 xs:py-5 xs:rounded-full flex justify-between items-center">
+      <div className="xs:w-11/12 xs:mx-auto dark:xs:bg-darkGreen xs:bg-primary xs:bg-opacity-50 px-32 lg:px-16 z-1 md:px-12 sm:px-8 py-8 xs:py-5 xs:rounded-full flex xs:justify-around justify-between items-center">
         <nav className="flex items-center justify-center">
-          <CustomLink className="mr-4" href="home" title="Home" icon={<GoHome />} activeIcon={<GoHomeFill />} />
-          <CustomLink className="mx-4" href="about" title="About" icon={<GoPerson />} activeIcon={<GoPersonFill />} />
-          <CustomLink className="mx-4" href="project" title="Projects" icon={<GoProject />} activeIcon={<AiFillProject />} />
-          <CustomLink className="ml-4" href="contact" title="Contact" icon={<BsSendPlus />} activeIcon={<BsSendPlusFill />} />
+          <CustomLink className="mr-3" href="home" title="Home" icon={<GoHome />} activeIcon={<GoHomeFill />} />
+          <CustomLink className="mx-3" href="about" title="About" icon={<GoPerson />} activeIcon={<GoPersonFill />} />
+          <CustomLink className="mx-3" href="project" title="Projects" icon={<GoProject />} activeIcon={<AiFillProject />} />
+          <CustomLink className="ml-3" href="contact" title="Contact" icon={<BsSendPlus />} activeIcon={<BsSendPlusFill />} />
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a

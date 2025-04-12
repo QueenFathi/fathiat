@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import proj1 from "../../public/images/projects/queenmart.png";
+import proj2 from "../../public/images/projects/byt1.jpeg";
+import proj3 from "../../public/images/projects/ksa.jpeg";
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -173,6 +175,18 @@ export default function Projects() {
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
+            <FeaturedProject
+                type="Design & Development"
+                tools="Tailwind CSS | React"
+                title="Movies Information Hub"
+                summary="Discover movies, cast, reviews, and ratings in one place online"
+                img={proj3}
+                date="2024"
+                link="https://korean-series-alive.vercel.app/"
+                github=""
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
               <FeaturedProject
                 type="Design & Development"
                 tools="Tailwind CSS | JavaScript | Next.js"
@@ -186,25 +200,13 @@ export default function Projects() {
             </div>
             <div className="col-span-6 sm:col-span-12">
             <FeaturedProject
-                type="Design & Development"
+                type="Development"
                 tools="Tailwind CSS | JavaScript | Next.js"
-                title="Clothings E-commerce Site"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
-                img={proj1}
+                title="Online Learning Platform"
+                summary="Interactive Platform offering flexible, engaging courses for lifelog online learning with a user-friendly experience."
+                img={proj2}
                 date="2025"
-                link=""
-                github=""
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-            <FeaturedProject
-                type="Design & Development"
-                tools="Tailwind CSS | JavaScript | Next.js"
-                title="Clothings E-commerce Site"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
-                img={proj1}
-                date="2025"
-                link=""
+                link="https://byte-start-queenfathis-projects.vercel.app/"
                 github=""
               />
             </div>
@@ -217,7 +219,7 @@ export default function Projects() {
                 img={loading}
                 time="1 min read"
                 date=""
-                link="https://github.com"
+                link="https://github.com/QueenFathi"
               />
             </ul>
           </div>

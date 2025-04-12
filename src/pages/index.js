@@ -56,15 +56,15 @@ export default function Home() {
               </p>
               <div className="mt-2 flex items-center self-start gap-3 grid-cols-2 lg:self-center">
                 <Link
-                  href="/#about"
-                  target={"_self"}
+                  href="/cv.pdf"
+                  download="Fathiat Abimbola Odutayo.pdf"
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
              `}
                 >
-                  Get To Know Me
+                  Download CV
                 </Link>
                 <Link
                   href="/#project"
